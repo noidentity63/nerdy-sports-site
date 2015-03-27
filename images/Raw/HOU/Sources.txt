@@ -1,0 +1,5 @@
+#PrimLogoCurrent1 - http://content.sportslogos.net/logos/6/230/full/8xe4813lzybfhfl14axgzzqeq.gif
+#SecLogoCurrent1 - http://content.sportslogos.net/logos/6/230/full/5854_houston_rockets-secondary-2015.png
+#AltLogoCurrent1 - http://content.sportslogos.net/logos/6/230/full/etpzlhc48xgh58agjuln2khsl.gif
+#AltLogoCurrent2 - http://content.sportslogos.net/logos/6/230/full/f2wtgg7p42ovwu4flwvdk04h9.gif
+#AltLogoCurrent3 - http://content.sportslogos.net/logos/6/230/full/j8h26iuxmih72odoa7j5nbq4e.gif

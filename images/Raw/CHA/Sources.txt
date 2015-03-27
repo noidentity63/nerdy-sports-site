@@ -1,0 +1,6 @@
+#PrimLogoCurrent1 - http://content.sportslogos.net/logos/6/5120/full/1926_charlotte__hornets_-primary-2015.png
+#AltLogoCurrent1 - http://content.sportslogos.net/logos/6/5120/full/1120_charlotte__hornets_-alternate-2015.png
+#AltLogoCurrent2 - http://content.sportslogos.net/logos/6/5120/full/1617_charlotte__hornets_-secondary-2015.png
+#AltLogoCurrent3 - http://content.sportslogos.net/logos/6/5120/full/3254_charlotte__hornets_-alternate-2015.png
+#AltLogoCurrent4 - http://content.sportslogos.net/logos/6/5120/full/3894_charlotte__hornets_-alternate-2015.png
+#AltLogoCurrent5 - http://content.sportslogos.net/logos/6/5120/full/4805_charlotte__hornets_-alternate-2015.png

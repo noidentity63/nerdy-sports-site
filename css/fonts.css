@@ -1,0 +1,29 @@
+@font-face {
+	font-family: "Abel";
+	src: url("../fonts/Abel-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Candal";
+	src: url("../fonts/Candal.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Galindo";
+	src: url("../fonts/Galindo-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Michroma";
+	src: url("../fonts/Michroma.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Octin-College";
+	src: url("../fonts/octin-college.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Jersey-Letters";
+	src: url("../fonts/JerseyLetters.ttf") format("truetype");
+}

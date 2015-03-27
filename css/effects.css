@@ -1,0 +1,51 @@
+/*
+~~Bottom Shadow Effect~~
+*/
+
+.shadow-bottom {
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	   -moz-box-shadow: 0 10px 6px -6px #777;
+	        box-shadow: 0 10px 6px -6px #777;
+}
+
+/*
+~~Side Shadows~~
+*/
+.shadow-leftright {
+  	position:relative;       
+    -webkit-box-shadow:	0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:	0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:	0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+/*
+~~Solid Hoverable Blue~~
+*/
+.blue-hov {
+	background-color: #d5d6f5;
+}
+
+	.blue-hov a {
+		color: #0c1094;
+	}
+
+	.blue-hov:hover {
+		background-color: #0c1094;
+		color: #d5d6f5;
+	}
+
+/*
+~~Solid Hoverable Red~~
+*/
+.red-hov {
+	background-color: #ffd8d8;
+}
+
+	.red-hov a {
+		color: #d40000;
+	}
+
+	.red-hov:hover {
+		background-color: #d40000;
+		color: #ffd8d8;
+	}

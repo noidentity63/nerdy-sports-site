@@ -1,0 +1,5 @@
+#PrimLogoCurrent1 - http://content.sportslogos.net/logos/6/213/full/slhg02hbef3j1ov4lsnwyol5o.png
+#AltLogoCurrent1 - http://content.sportslogos.net/logos/6/213/full/1141_boston_celtics-alternate-2015.png
+#AltLogoCurrent2 - http://content.sportslogos.net/logos/6/213/full/7746_boston_celtics-secondary-2015.png
+#AltLogoCurrent3 - http://content.sportslogos.net/logos/6/213/full/9648_boston_celtics-alternate-2015.png
+#AltLogoCurrent4 - http://content.sportslogos.net/logos/6/213/full/4037_boston_celtics-secondary-2015.png

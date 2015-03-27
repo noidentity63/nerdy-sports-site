@@ -1,0 +1,27 @@
+a {
+	color: maroon;
+	text-decoration: none;	
+}
+
+a:hover {
+	background-color: maroon;
+	color: #f0f0f0;
+}
+
+.item {
+	display: inline;
+}
+
+.info {
+	background-color: #f0f0f0;
+	border: 2px solid black;
+	position: fixed;
+	top: 0;
+	right: 0;
+	float: right;
+}
+/*
+.links span {
+	display: inline;
+}
+*/

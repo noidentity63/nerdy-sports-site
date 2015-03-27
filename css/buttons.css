@@ -1,0 +1,74 @@
+/*Default button values*/
+.button {
+	background: rgb(242,245,246); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(242,245,246,1) 0%, rgba(227,234,237,1) 25%, rgba(200,215,220,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,245,246,1)), color-stop(25%,rgba(227,234,237,1)), color-stop(100%,rgba(200,215,220,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 25%,rgba(200,215,220,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 25%,rgba(200,215,220,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 25%,rgba(200,215,220,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 25%,rgba(200,215,220,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=0 ); /* IE6-9 */
+
+
+	border: 		1px solid black;
+	border-radius: 	10px;
+	/*cursor: pointer;*/
+	font-family: 	"Abel", "Verdana", sans-serif;
+	font-weight: bold;
+	font-size: 		1.2em;
+	line-height: 	1.7;		/*'Proper' line-height setting for this button*/'
+	padding-top: 	5px;
+	padding-bottom: 0;
+	position: 		relative;
+	min-width: 		140px;
+	min-height: 	30px;
+	text-align: 	center;
+}
+
+	.button span {
+		position:	absolute; 
+	 	width:		100%;
+	  	height:		100%;
+		top:		0;
+		left: 		0;
+
+	  /* edit: added z-index */
+	  	z-index: 	1;
+
+	  /* edit: fixes overlap error in IE7/8, 
+	     make sure you have an empty gif 
+	  	background-image: url('empty.gif');*/
+	}
+
+/*
+Default tab values...
+	Tabs are like buttons but have no defined bottom border.
+*/
+.tab {
+	border-top-left-radius: 	20px;
+	border-top-right-radius: 	20px;
+	border-top: 				2px solid #260412;
+	border-left: 				2px solid #260412;
+	border-right: 				2px solid #260412;
+	padding-left: 				10px;
+	padding-right: 				10px;
+	position:					relative;
+	min-width: 					auto;
+	min-height: 				auto; /*40px;*/
+	text-align: 				center;
+}
+
+	.tab span {
+		position:	static; 
+	 	width:		100%;
+	  	height:		100%;
+		top:		0;
+		left: 		0;
+		
+	  /* edit: added z-index */
+	  	z-index: 	1;
+
+	  /* edit: fixes overlap error in IE7/8, 
+	     make sure you have an empty gif 
+	  	background-image: url('empty.gif');*/
+	}
