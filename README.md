@@ -8,6 +8,6 @@ provide at least the following functions:
 >Teaching of basic basketball terms to the casual fan; and
 >Account-enabled saving of star and team 'favorites'
 
-Data on the stars and teams will be placed in a database. I will probably be using mySQL for this project.
+Data on the stars and teams will be placed in a relational database (mySQL).
 
 #...to be updated
