@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<!--Meta tags-->
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> <!--Disables mobile zoom-->
+
 	<title>Visual Layout #1</title>
 
 	<!--Vendor files-->
@@ -21,12 +24,24 @@
 	</div>
 	<div class="row">
 		<div class="container">
-			<div class="panel col-md-2">Panel 1</div>
-			<div class="panel col-md-8">Panel 2</div>
-			<div class="panel col-md-2">Panel 3</div>
+
+			<!--Info Panel-->
+			<div class="inf-panel col-md-2 col-sm-4 hidden-xs">Panel 1</div>
+
+			<!--Content Panel-->
+			<div class="cnt-panel col-md-8 col-sm-8 col-xs-12">
+				<div class="cnt-panel__vis">Panel 2</div>
+				<div class="cnt-panel__txt">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a aliquet massa. Nam pellentesque mi eu euismod ultrices. Sed pretium fringilla neque, eu sodales sapien scelerisque in. Proin laoreet lacus ac mattis ullamcorper. Aenean cursus, orci ac imperdiet sagittis, libero neque iaculis sapien, id ornare quam lacus in sapien. Vivamus elementum elit quis euismod vulputate. Sed feugiat in leo vel ornare. In hac habitasse platea dictumst. Nullam ac ante ipsum. Pellentesque vel sem ex. Ut molestie felis sed libero molestie, id feugiat est laoreet.</p>
+				</div>
+			</div>
+
+			<!--Misc Panel-->
+			<div class="misc-panel col-md-2 hidden-sm hidden-xs">Panel 3</div>
 		</div>
 	</div>
-	<div class="footer col-md-12">
+	<div class="main-footer col-md-12">
+		<h4>Footer</h4>
 	</div>
 </body>
 </html>

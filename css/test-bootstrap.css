@@ -1,9 +1,30 @@
 body {
-	margin:		0;
-	padding:	0;
+	background-color:	#fff;
+	margin:				0;
+	padding:			0;
 }
 
-.panel {
-	border:			1px solid #fff;
+.main-header {
+	border:			1px solid #000;
+}
+
+.inf-panel, .cnt-panel, .misc-panel {
+	border:			1px solid #000;
 	border-radius:	0; 
+}
+
+.cnt-panel {
+
+}
+
+	.cnt-panel__vis {
+		/*border:			1px solid #000;*/
+	}
+
+	.cnt-panel__txt {
+		/*border:			1px solid #000;*/
+	}
+
+.main-footer {
+	border:			1px solid #000;
 }
