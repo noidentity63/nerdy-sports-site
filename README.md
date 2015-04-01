@@ -8,6 +8,20 @@ provide at least the following functions:
 >Teaching of basic basketball terms to the casual fan; and
 >Account-enabled saving of star and team 'favorites'
 
-Data on the stars and teams will be placed in a relational database (mySQL).
+Data on the stars and teams will be placed in a relational database.
 
-#...to be updated
+####Languages to be used:
+
+*HTML5
+*CSS3
+*JavaScript
+*Ruby
+*PHP (Possibly)
+
+####Frameworks to be used:
+
+*JQuery
+*Bootstrap
+*AngularJS (Possibly)
+
+###...to be updated
