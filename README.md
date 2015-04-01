@@ -4,11 +4,15 @@ This is my first actual repository and expirimentation with git on my current we
 "NBArd" is a website project that focuses on attracting new fans into the NBA and educating its existing fanbase. It aims to
 provide at least the following functions:
 
->Presentation of NBA stars and teams in an entertaining yet informative matter;
->Teaching of basic basketball terms to the casual fan; and
->Account-enabled saving of star and team 'favorites'
+*Presentation of NBA stars and teams in an entertaining yet informative matter
+*Teaching of basic basketball terms and the NBA to the casual fan
+*Providing the reader with up-to-date trends on the league
 
-Data on the stars and teams will be placed in a relational database.
+Future plans and features for the project:
+
+*Database reliant information hub similar to a CMS (Content Management System)
+*Search function
+*User accounts for more specialized browsing
 
 ####Languages to be used:
 
@@ -24,5 +28,9 @@ Data on the stars and teams will be placed in a relational database.
 *Bootstrap
 *AngularJS (Possibly)
 *Ruby on Rails
+
+####Database to be used:
+
+*MySQL
 
 ###...to be updated
