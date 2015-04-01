@@ -23,5 +23,6 @@ Data on the stars and teams will be placed in a relational database.
 *JQuery
 *Bootstrap
 *AngularJS (Possibly)
+*Ruby on Rails
 
 ###...to be updated
