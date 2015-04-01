@@ -1,8 +1,7 @@
 # nerdy-sports-site
-This is my first actual repository and expirimentation with git on my current web project.
+This is my first actual repository and expirimentation with git on one of my current web projects.
 
-"NBArd" is a website project that focuses on attracting new fans into the NBA and educating its existing fanbase. It aims to
-provide at least the following functions:
+**NBArd** is a website project that focuses on attracting new fans into the NBA and educating its existing fanbase. The site name comes from the acronym *NBA* and the word *bard* (a musician, storyteller, or both that travels from tavern to tavern. They were prominent during the Middle ages) The site aims to provide at least the following functions:
 
 * Presentation of NBA stars and teams in an entertaining yet informative matter
 * Teaching of basic basketball terms and the NBA to the casual fan
