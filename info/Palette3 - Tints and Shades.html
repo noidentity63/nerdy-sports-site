@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0051)http://highintegritydesign.com/tools/tinter-shader/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>Tinter-Shader | Choose your colors, then get tints &amp; shades | High Integrity Design LLC</title> 
+	<link rel="stylesheet" type="text/css" href="./Palette3 - Tints and Shades_files/reset.css">
+	<link rel="stylesheet" type="text/css" href="./Palette3 - Tints and Shades_files/960.css">
+	<link rel="stylesheet" type="text/css" href="./Palette3 - Tints and Shades_files/styles.css">
+	<link rel="stylesheet" type="text/css" href="./Palette3 - Tints and Shades_files/jquery.fancybox-1.2.6.css">	
+<!--[if lte IE 6]>
+<link rel="stylesheet" type="text/css" href="styles_IE6.css" />
+<![endif]-->	
+	<script type="text/javascript" src="./Palette3 - Tints and Shades_files/jquery-1.4.1.min.js"></script> 
+	<script type="text/javascript" src="./Palette3 - Tints and Shades_files/jquery.fancybox-1.2.6.pack.js"></script> 
+	<script type="text/javascript" src="./Palette3 - Tints and Shades_files/shader-tinter.js"></script> 
+<!--	********************************************************************* 
+		Tinter-Shader web application, (c) Copyright 2010 High Integrity Design, LLC
+		http://www.highintegritydesign.com
+
+		licensed under a Creative Commons Attribution-Share Alike 3.0 United States License. 
+		http://creativecommons.org/licenses/by-sa/3.0/us/
+		********************************************************************* -->
+</head>
+<body>
+<div class="container_12">
+	<div id="about-content">
+		<h2>What Is Tinter-Shader?</h2>
+		<p>Tinter-Shader is a web application that generates tints and shades from an RGB color pallette that you give it. 
+			I wrote it because I needed a tool like this and couldn’t find one on the web. And, because I 
+			wanted to practice and improve my JavaScript and JQuery skills.</p>
+		<h2>What’s It Good For?</h2>
+		<p>Tinter-Shader is great for when you already have a color pallete for your design, but you need some tints and shades
+			that would make good colors for backgrounds, text, forms and panels that fit into your existing color scheme.
+		</p>
+		<h2>Inspiration</h2>
+		<p>Inspiration for Tinter-Shader came from two of my favorite tools, Color Blender (http://meyerweb.com/eric/tools/color-blend/) and Color Scheme Designer (http://colorschemedesigner.com/).  These are both excellent tools which I use often.  Tinter-Shader is a different and complementary tool to these.</p>
+		<h2>Enjoy...and a Disclaimer</h2>
+		<p>I hope you enjoy Tinter-Shader.  If you find it useful, please consider mentioning my name and linking to me from your site to share some Google Love.  Last but not least, this is a free tool— no warranty is provided.  Use at your own risk.  It works for me!</p>
+		<img src="./Palette3 - Tints and Shades_files/signature.jpg" alt="North Krimsly">
+	</div> <!-- about-content -->
+	
+	<div id="header">
+		<div class="grid_6">
+			<h1>Color Tinter-Shader</h1> <em>Beta</em>
+			<h2>Choose your colors, then get your tints &amp; shades</h2> 
+		</div>
+		<div class="grid_6">
+			<img id="header-image" src="./Palette3 - Tints and Shades_files/sunglasses.png" alt="Get your shades">
+		</div>
+	<div class="clear"></div>
+	</div> <!-- header -->
+	
+	<div id="wrapper">
+		<div class="grid_3">
+			<h3>1. Enter your color values</h3> 
+			<p>
+				Enter your colors as hexadecimal RGB values separated by spaces or returns. For example: 
+			</p>
+			<form id="color-entry-form" action="http://highintegritydesign.com/tools/tinter-shader/#" method="post" name="color-entry-form">
+				<textarea class="monospace" rows="10" cols="20" id="color-values" name="color-values">FFFFFF FF0000 00FF00 0000FF</textarea> 
+				<h3>2. Get your tints &amp; shades</h3> 
+				<input type="submit" value="Get Tints &amp; Shades!"> 
+			</form>
+		</div><!-- grid_3 -->
+		
+		<div class="grid_9">
+			<div id="shades-tints"><table><tbody><tr><td style="background-color:#e70012" ;=""></td><td style="background-color:#d00010" ;=""></td><td style="background-color:#b9000e" ;=""></td><td style="background-color:#a2000c" ;=""></td><td style="background-color:#8b000a" ;=""></td><td style="background-color:#740008" ;=""></td><td style="background-color:#5d0006" ;=""></td><td style="background-color:#460004" ;=""></td><td style="background-color:#2f0002" ;=""></td><td style="background-color:#180000" ;=""></td><td style="background-color:#000000" ;=""></td></tr><tr><td class="rgb-value">#E70012</td><td class="rgb-value">#D00010</td><td class="rgb-value">#B9000E</td><td class="rgb-value">#A2000C</td><td class="rgb-value">#8B000A</td><td class="rgb-value">#740008</td><td class="rgb-value">#5D0006</td><td class="rgb-value">#460004</td><td class="rgb-value">#2F0002</td><td class="rgb-value">#180000</td><td class="rgb-value">#000000</td></tr><tr><td style="background-color:#e70012" ;=""></td><td style="background-color:#e91a2a" ;=""></td><td style="background-color:#eb3442" ;=""></td><td style="background-color:#ed4e5a" ;=""></td><td style="background-color:#ef6872" ;=""></td><td style="background-color:#f1828a" ;=""></td><td style="background-color:#f39ca2" ;=""></td><td style="background-color:#f5b6ba" ;=""></td><td style="background-color:#f7d0d2" ;=""></td><td style="background-color:#f9eaea" ;=""></td><td style="background-color:#FFFFFF" ;=""></td></tr><tr><td class="rgb-value">#E70012</td><td class="rgb-value">#E91A2A</td><td class="rgb-value">#EB3442</td><td class="rgb-value">#ED4E5A</td><td class="rgb-value">#EF6872</td><td class="rgb-value">#F1828A</td><td class="rgb-value">#F39CA2</td><td class="rgb-value">#F5B6BA</td><td class="rgb-value">#F7D0D2</td><td class="rgb-value">#F9EAEA</td><td class="rgb-value">#FFFFFF</td></tr><tr><td style="background-color:#1d2089" ;=""></td><td style="background-color:#1a1d7b" ;=""></td><td style="background-color:#171a6d" ;=""></td><td style="background-color:#14175f" ;=""></td><td style="background-color:#111451" ;=""></td><td style="background-color:#0e1143" ;=""></td><td style="background-color:#0b0e35" ;=""></td><td style="background-color:#080b27" ;=""></td><td style="background-color:#050819" ;=""></td><td style="background-color:#02050b" ;=""></td><td style="background-color:#000000" ;=""></td></tr><tr><td class="rgb-value">#1D2089</td><td class="rgb-value">#1A1D7B</td><td class="rgb-value">#171A6D</td><td class="rgb-value">#14175F</td><td class="rgb-value">#111451</td><td class="rgb-value">#0E1143</td><td class="rgb-value">#0B0E35</td><td class="rgb-value">#080B27</td><td class="rgb-value">#050819</td><td class="rgb-value">#02050B</td><td class="rgb-value">#000000</td></tr><tr><td style="background-color:#1d2089" ;=""></td><td style="background-color:#343695" ;=""></td><td style="background-color:#4b4ca1" ;=""></td><td style="background-color:#6262ad" ;=""></td><td style="background-color:#7978b9" ;=""></td><td style="background-color:#908ec5" ;=""></td><td style="background-color:#a7a4d1" ;=""></td><td style="background-color:#bebadd" ;=""></td><td style="background-color:#d5d0e9" ;=""></td><td style="background-color:#ece6f5" ;=""></td><td style="background-color:#FFFFFF" ;=""></td></tr><tr><td class="rgb-value">#1D2089</td><td class="rgb-value">#343695</td><td class="rgb-value">#4B4CA1</td><td class="rgb-value">#6262AD</td><td class="rgb-value">#7978B9</td><td class="rgb-value">#908EC5</td><td class="rgb-value">#A7A4D1</td><td class="rgb-value">#BEBADD</td><td class="rgb-value">#D5D0E9</td><td class="rgb-value">#ECE6F5</td><td class="rgb-value">#FFFFFF</td></tr></tbody></table></div>
+		</div><!-- grid_9 -->
+		
+		<div class="clear"></div>
+	</div><!-- wrapper -->
+		<div class="clear"></div>	
+	<div id="footer">
+		<div class="grid_3">
+			<p>
+				© 2010 High Integrity Design, LLC 
+				<br>
+				<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/us/">
+					<img alt="Creative Commons License" style="border-width:0" src="./Palette3 - Tints and Shades_files/somerights20.png">
+				</a>
+			</p>
+		</div> <!-- grid_3 -->
+		
+		<div class="grid_6">
+			<p>
+				Tinter-Shader by <a href="http://www.highintegritydesign.com/" rel="cc:attributionURL">High Integrity Design LLC</a> is licensed
+											under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/us/">
+											Creative Commons Attribution-Share Alike 3.0 United States License
+										</a>
+				<br>
+			</p>
+		</div> <!-- grid_6 -->
+
+		<div class="grid_3" id="about-footer">
+			<p><a id="about-link" href="http://highintegritydesign.com/tools/tinter-shader/#about-content">About Tinter-Shader</a></p>
+		</div> <!-- grid_3 -->
+
+		<div class="clear"></div>
+	</div> <!-- footer -->
+</div><!-- container_12 -->
+
+
+<div id="fancy_overlay"></div><div id="fancy_loading"><div></div></div><div id="fancy_outer"><div id="fancy_inner"><div id="fancy_close"></div><div id="fancy_bg"><div class="fancy_bg" id="fancy_bg_n"></div><div class="fancy_bg" id="fancy_bg_ne"></div><div class="fancy_bg" id="fancy_bg_e"></div><div class="fancy_bg" id="fancy_bg_se"></div><div class="fancy_bg" id="fancy_bg_s"></div><div class="fancy_bg" id="fancy_bg_sw"></div><div class="fancy_bg" id="fancy_bg_w"></div><div class="fancy_bg" id="fancy_bg_nw"></div></div><a href="javascript:;" id="fancy_left"><span class="fancy_ico" id="fancy_left_ico"></span></a><a href="javascript:;" id="fancy_right"><span class="fancy_ico" id="fancy_right_ico"></span></a><div id="fancy_content"></div></div></div><div id="fancy_title"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr><td class="fancy_title" id="fancy_title_left"></td><td class="fancy_title" id="fancy_title_main"><div></div></td><td class="fancy_title" id="fancy_title_right"></td></tr></tbody></table></div><div id="window-resizer-tooltip" style="display: block;"><a href="http://highintegritydesign.com/tools/tinter-shader/#" title="Edit settings"></a><span class="tooltipTitle">Window size: </span><span class="tooltipWidth" id="winWidth">1280</span> x <span class="tooltipHeight" id="winHeight">720</span><br><span class="tooltipTitle">Viewport size: </span><span class="tooltipWidth" id="vpWidth">1280</span> x <span class="tooltipHeight" id="vpHeight">589</span></div></body></html>

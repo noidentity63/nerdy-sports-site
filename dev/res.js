@@ -1,7 +1,7 @@
 //alert("Hello");
 
 $(document).ready(function() {
-	alert("Test run");
+	alert("JavaScript loaded");
 
 	//Capture clicked link and store to var
 	$('.item').click(function() {

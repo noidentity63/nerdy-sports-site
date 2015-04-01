@@ -1,0 +1,164 @@
+body{background:#191615 url('../img/bg.gif') repeat; color:#aaa; font-family:'Trebuchet MS', Arial, sans-serif;}
+a{color:#ccc;text-decoration:none;}
+div#logo{text-indent:-999em; margin-top:60px; }
+div#logo a{width:313px; height:60px; display:block; background:url('../img/logo.png') no-repeat; margin:0 auto;}
+div#ever_wonder{text-indent:-999em;width:854px; height:95px; background: url('../img/everwonder_line.png') no-repeat; margin:20px auto 30px; }
+div.file_input{position:relative; width:535px; margin:0 auto; position:relative; left:20px;}
+div.fakefile{position:absolute;top:0px;left:0px;z-index:1; cursor:text !important}
+input.file{position:relative;text-align:right;-moz-opacity:0 ;filter:alpha(opacity:0);opacity:0;z-index:2; width:525px; height:55px; cursor:pointer;}
+div.file_input p.subnote{font-size:11px; text-align:center;}
+div.fakefile input{background:#141414; border:1px solid #464444; color:#EEEEEE; font-size:17px; height:35px; padding-top:14px; text-indent:15px; width:422px; cursor:text !important; z-index:1;}
+div.fakefile img{vertical-align:top; margin-left:10px;}
+
+div#get_my_palette{text-indent:-999em; position:relative; top:20px;}
+div#get_my_palette a {display:block; background:url('../img/getmypalette.jpg') no-repeat; width:221px; height:64px; margin:20px auto;position:relative; left:10px;}
+
+div#palette_results{width:679px; height:700px; background:url('../img/palette_panel_bg.png') no-repeat; margin:30px auto; padding:5px 0; position:relative; top:20px; margin-bottom:150px;}
+div#palette_results h3{text-transform:uppercase; font-weight:100; font-size:13px; margin-bottom:10px;}
+div#palette_results div#palette_colors{width:610px; margin:20px auto;}
+
+div#palette_results div#palette_colors div.palette_color{width:122px; height:109px; background:#333; float:left;}
+div#palette_results div#palette_colors div#palette_color1{background:#333;}
+div#palette_results div#palette_colors div#palette_color2{background:#666;}
+div#palette_results div#palette_colors div#palette_color3{background:#999;}
+div#palette_results div#palette_colors div#palette_color4{background:#ccc;}
+div#palette_results div#palette_colors div#palette_color5{background:#eee;}
+
+div#palette_results div#palette_hexs{width:610px; margin:20px auto; position:relative; top:10px; left:-2px;margin-bottom:150px;}
+div#palette_results div#palette_hexs div.palette_hex{width:100px; float:left; margin:0 11px; }
+div#palette_results div#palette_hexs div.palette_hex input{width:100px; background:#171515; border:1px solid #211e1e; color:#eee; text-align:center; padding:3px 0; text-transform:uppercase;}
+
+div#image_source{float:left; width:130px; margin:20px 0 0 33px; min-height:175px;}
+div#image_source div#image_thumb{ min-width:100px; min-height:100px; margin-top:15px;}
+
+
+div#kuler_suggests h3.logo span{height:22px; background:url(../img/kuler_logo.png) center left no-repeat; padding:10px 0 10px 26px;}
+div#cl_suggests h3.logo span{display:block; float:left;height:20px; width:112px; background:url(../img/colour_lovers_logo.png) center left no-repeat; text-indent:-999em; margin-right:5px; position:relative; top:-2px;}
+
+div.external_palettes{float:left; width:220px; margin:20px 0 30px 33px;min-height:175px; font-size:11px;}
+div.external_palettes ul {margin-top:30px;}
+div.external_palettes ul li{list-style:none;padding-bottom:25px;}
+div.external_palettes ul li a{position:relative; padding-top:20px; color:#555;}
+div.external_palettes ul li a img{float:left; position:absolute; top:0; left:0;}
+div.external_palettes ul li h5{display:inline; margin-left:2px; font-weight:bold; color:#777;}
+
+div#cl_suggests{float:left;width:220px; margin:20px 0 0 33px; min-height:175px;}
+img.kuler_swatch,img.cl_swatch{width:195px; height:16px;}
+
+
+
+div#download_swatch{clear:both; width:357px; height:62px; position:absolute; left:50%;bottom:185px; margin-left:-180px; background:url('../img/download_swatch.jpg') no-repeat; text-indent:-999em;}
+div#download_swatch a{display:block; width:357px; height:62px;}
+div#actions{text-align:center; position:absolute; bottom:140px; width:100%;}
+
+
+div#loading_palette{width:854px; height:95px;margin:20px auto 30px; display:none;}
+
+#iphone_shadow{position:fixed; width:100%; bottom:115px; height:89px; background:url('../img/iphone_bottom_shadow.png') top left repeat-x;}
+#iphone_wrap{height:115px; background:#050505 url('../img/iphone_bottom.jpg') top center no-repeat; width:100%; position:fixed; bottom:10px; left:0; text-indent:-999em; z-index:2; }
+#iphone_wrap a{display:block; height:147px; width:398px; background:url('../img/iphone.png'); margin:0 auto; position:absolute; top:-60px; left:50%; margin-left:-198px; text-indent:-999em;}
+
+
+#wrap{width:854px; margin:0 auto; position:relative; left:-20px;}
+#zoomDimmer{position:absolute; top:0; left:0; width:100%; height:1000px; background:#111; z-index:450; visibility:hidden;}
+#ZoomImage, #ZoomBox{background:#000;}
+img#ZoomImage{margin-left:-1px !important;}
+
+#brought-to-you-by{width:174px; height:73px; background: url(../img/broughttoyouby.png) no-repeat; position:fixed; top:0; right:30px; text-indent:-999em;}
+
+#loading-image{position:fixed; left:50%; top:50%; margin:-10px 0 0 -50px;}
+
+#view-api {position:fixed; bottom:0; width:100%; text-align:center; z-index:100; font-size:14px; background-color:#000;}
+#view-api a {position:relative; top:-7px;}
+#view-api a:hover, #view-api a:active {text-decoration:underline;}
+#view-api span {display:inline-block; font-size:75%; padding-left:5px;}
+
+/*
+* jQuery UI CSS Framework
+* Copyright (c) 2009 AUTHORS.txt (http://jqueryui.com/about)
+* Dual licensed under the MIT (MIT-LICENSE.txt) and GPL (GPL-LICENSE.txt) licenses.
+*/
+
+/* Layout helpers
+----------------------------------*/
+.ui-helper-hidden { display: none; }
+.ui-helper-hidden-accessible { position: absolute; left: -99999999px; }
+.ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+.ui-helper-clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.ui-helper-clearfix { display: inline-block; }
+/* required comment for clearfix to work in Opera \*/
+* html .ui-helper-clearfix { height:1%; }
+.ui-helper-clearfix { display:block; }
+/* end clearfix */
+.ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
+
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-disabled { cursor: default !important; }
+
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+#sharethis_0 .stico_default{transparent url(http://w.sharethis.com/images/share-icon-16x16.png?CXNID=1000014.0NXC) no-repeat scroll 0 3px !important}
+
+/* Misc visuals
+----------------------------------*/
+
+/* Overlays */
+.ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background:#333; opacity:.6;}
+.ui-dialog{background:#000; padding:20px; width:215px !important;}
+.ui-dialog label{display:none}
+.ui-dialog-titlebar{min-height:auto !important; height:30px !important;}
+#email_dialog{min-height:30px !important; height:auto !important;}
+#email_dialog input#email{ padding:3px;}
+.ui-dialog-buttonpane button{font-size:12px; padding:5px; text-transform:capitalize; margin:10px 10px 0 0;}
+.stico_default{background-position:0 3px;}
+iframe#stframe body{color:#fff;}
+iframe#stframe #container{background:#000;}
+iframe#stframe #container a{color:#eee !important;}
+
+
+/*api*/
+
+.api div#logo a {position:relative; left:-20px;}
+
+#api_content{padding:0 100px 40px;}
+
+.api #wrap{font-size:14px;}
+.api #ever_wonder1{text-indent:-999em;width:854px; background: url('../img/everwonder_line.png') no-repeat; margin:20px auto 30px; height:1px;}
+
+.api #wrap {}
+.api #wrap h3{color:#eee;  font-size:15px;}
+.api #wrap h4{color:#fff; margin-top:20px;}
+.api #wrap p{margin-bottom:20px;}
+
+.api #head{text-align:center; padding-bottom:10px;}
+.api #head h3{font-size:22px; color:#fff; margin-bottom:0;}
+.api #head h4{color:#aaa;margin-top:0px; font-size:18px;}
+
+.api #overview { margin-bottom:30px; }
+.api #overview h4{font-size:18px;}
+.api #overview p{}
+
+.api #wrap ul{}
+.api #wrap ul li{margin-left:30px;}
+.api #wrap ul li ul{margin:10px 0;}
+
+.api strong{color:#dddddd;}
+.api ol li{list-style:none;padding-left:20px;}
+
+.api pre.php{margin:10px 0;}
+.api pre.php li{background:rgba(0,0,0,.1) !important;}
+#code_block{margin:20px 0;}
+
+.api #support strong{font-size:12px; font-weight:normal;}
+.api #support input{margin-top:5px;}
+.api #support table{width:100%;}
+.api #support h3{margin-bottom:10px;}
+.api #support b{font-size:11px;}
+.api #support td{padding:10px 5px;background:rgba(0,0,0,.2);}
+.api a{color:#fff; text-decoration:underline;}

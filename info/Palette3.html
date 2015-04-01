@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0027)http://www.pictaculous.com/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<title>Pictaculous - A Color Palette Generator (courtesy of MailChimp)</title>
+		<meta name="description" content="Generate a color palette from PNG, JPG or GIF image/photo. Receive color suggestions, download Photoshop swatches (.ACO)">
+		<link rel="stylesheet" href="./Palette3_files/reset.css" type="text/css" media="screen">
+		<meta name="verify-v1" content="xUTEJE+q5KtU180bmSLQ8sIQB6rw+ccDbI969ZrEMrs=">
+		<link rel="stylesheet" href="./Palette3_files/base.css" type="text/css" media="screen">
+		<script src="./Palette3_files/jquery.min.js" type="text/javascript"></script>
+		<script src="./Palette3_files/jquery-ui.min.js" type="text/javascript"></script>
+		<script src="./Palette3_files/FancyZoom.js" type="text/javascript"></script>
+		<script src="./Palette3_files/FancyZoomHTML.js" type="text/javascript"></script>
+		<script type="text/javascript" src="./Palette3_files/gen.js"></script>
+		<!--[if IE 6]>
+			<script type="text/javascript" src="js/ie6update/ie6update.js"></script>
+			<link rel="stylesheet" media="screen" type="text/css" href="css/ie6.css" />
+			<script type="text/javascript" src="js/supersleight.js"></script>
+		<![endif]-->
+		<!--[if IE 7]>
+		<style type="text/css" media="screen">div.file_input{width:555px;}</style>
+		<![endif]-->
+		<!--[if IE 8]>
+		<link rel="stylesheet" media="screen" type="text/css" href="http://webcss.mailchimp.com/css/ie8.css" />
+		<![endif]-->
+                <script type="text/javascript">
+            current_palette = {"colors":["FAC9CC","AFB0D5","E70012","1D2089","FFFFFF"],"url":"http:\/\/gallery.mailchimp.com\/__default__\/images\/nba_logo_vector.jpg","name":"nba-logo-vector.jpg"};
+			$(document).ready(function(){
+				$('html, body').animate({
+				scrollTop: '440px'
+				}, 1000);				
+			});
+        </script>
+        	<link href="./Palette3_files/sharethis.1ac33bc7d4476110a610f925104446ff.css" rel="stylesheet" type="text/css"></head>
+	<body id="pictaculous" onclick="if(SHARETHIS.buttonClicked==false){SHARETHIS.stopClosing=false;SHARETHIS.openDuration=0;stClose(100);}"><div id="ZoomSpin" style="position: absolute; left: 10px; top: 10px; visibility: hidden; z-index: 525;"><img id="SpinImage" src="./Palette3_files/zoom-spin-1.png"></div><div id="ZoomBox" style="position: absolute; left: 10px; top: 10px; visibility: hidden; z-index: 499;"><img src="./Palette3_files/spacer.gif" id="ZoomImage" border="0" left="-1px" style="-webkit-box-shadow: rgba(0, 0, 0, 0) 0px 5px 25px; display: block; width: 10px; height: 10px; cursor: pointer;"><div id="ZoomClose" style="position: absolute; left: -15px; top: -15px; visibility: hidden;"><img src="./Palette3_files/closebox.png" width="30" height="30" border="0" style="cursor: pointer;"></div></div><div id="zoomDimmer" style="visibility: hidden; opacity: 0.8;"><img src="./Palette3_files/loading.gif" id="loading-image"></div>
+		<div id="wrap">
+			<div id="logo">
+				<h1><a href="./Palette3_files/Palette3.html" title="Pictaculous, Color Palette Generator">Pictaculous</a></h1>
+				<h2>A Color Palette Generator</h2>
+			</div>
+			<a href="http://www.mailchimp.com/index.php/?utm_source=pictaculous&utm_medium=labs&utm_content=home" title="MailChimp Email Marketing" id="brought-to-you-by">MailChimp Email Marketing</a>
+			<div id="ever_wonder">
+				<h3>Ever wonder what colors to use with an image?</h3>
+				<h4>Upload your image and generate a color palette!</h4>
+			</div>
+                        <form method="post" action="./Palette3_files/Palette3.html" enctype="multipart/form-data" id="upload_form">
+			<div class="file_input">
+                <input type="file" class="file hidden" id="real_file" name="upload"><div class="fakefile"><input><img src="./Palette3_files/browse_input.png"></div>
+				<p class="subnote">(PNG, GIF, JPG only. Files cannot be larger than 500k)</p>
+			</div>
+			<div id="get_my_palette">
+				<p><a href="" title="Get my">Get my palette</a></p>
+			</div>
+            </form>
+
+			<div id="loading_palette"></div>
+            			<div id="palette_results">
+				<div id="palette_colors">
+					<h3>Your Palette:</h3>
+                                        <div class="palette_color" id="palette_color1" style="background-color: #FAC9CC;"></div>
+                                        <div class="palette_color" id="palette_color2" style="background-color: #AFB0D5;"></div>
+                                        <div class="palette_color" id="palette_color3" style="background-color: #E70012;"></div>
+                                        <div class="palette_color" id="palette_color4" style="background-color: #1D2089;"></div>
+                                        <div class="palette_color" id="palette_color5" style="background-color: #FFFFFF;"></div>
+                    				</div>
+				<div id="palette_hexs">
+                    					<div class="palette_hex" id="palette_hex1">
+						<input type="text" name="hex1" id="hex1" value="#FAC9CC">
+					</div>
+                    					<div class="palette_hex" id="palette_hex2">
+						<input type="text" name="hex2" id="hex2" value="#AFB0D5">
+					</div>
+                    					<div class="palette_hex" id="palette_hex3">
+						<input type="text" name="hex3" id="hex3" value="#E70012">
+					</div>
+                    					<div class="palette_hex" id="palette_hex4">
+						<input type="text" name="hex4" id="hex4" value="#1D2089">
+					</div>
+                    					<div class="palette_hex" id="palette_hex5">
+						<input type="text" name="hex5" id="hex5" value="#FFFFFF">
+					</div>
+                    				</div>
+				<div id="image_source">
+					<h3>Image Source:</h3>
+					<div id="image_thumb">
+                        <img src="./Palette3_files/nba_logo_vector.jpg">
+					</div>
+				</div>
+				<div id="kuler_suggests" class="external_palettes">
+					<h3 class="logo"><span>Kuler</span> Suggests:</h3>
+					<ul id="kuler_themes">
+                                                <li><a href="http://kuler.adobe.com/index.cfm#themeID/223728" rel="external" target="_blank"><h5>ojai wedding</h5><img class="swatch kuler_swatch" src="./Palette3_files/generateThemePng.cfm"> by roivoire</a>
+                        </li>
+                                                <li><a href="http://kuler.adobe.com/index.cfm#themeID/506566" rel="external" target="_blank"><h5>lookup 1</h5><img class="swatch kuler_swatch" src="./Palette3_files/generateThemePng(1).cfm"> by broadway_dreams</a>
+                        </li>
+                                                <li><a href="http://kuler.adobe.com/index.cfm#themeID/3272269" rel="external" target="_blank"><h5>Vire Home Page</h5><img class="swatch kuler_swatch" src="./Palette3_files/generateThemePng(2).cfm"> by theforklord</a>
+                        </li>
+                                                <li><a href="http://kuler.adobe.com/index.cfm#themeID/3209013" rel="external" target="_blank"><h5>Copy of sweetbudstest</h5><img class="swatch kuler_swatch" src="./Palette3_files/generateThemePng(3).cfm"> by dannyjlaurence</a>
+                        </li>
+                                                <li><a href="http://kuler.adobe.com/index.cfm#themeID/358275" rel="external" target="_blank"><h5>purpleheartssafe</h5><img class="swatch kuler_swatch" src="./Palette3_files/generateThemePng(4).cfm"> by hayley_bagel</a>
+                        </li>
+                                            </ul>
+				</div>
+				<div id="cl_suggests" class="external_palettes">
+					<h3 class="logo"><span>ColourLovers</span> Suggests:</h3>
+					<ul id="cl_themes">
+                                                <li><a href="http://www.colourlovers.com/palette/660880/1.28" rel="external" target="_blank"><h5>1.28</h5><img class="swatch cl_swatch" src="./Palette3_files/cl_swatch.php"> by retsof</a>
+                        </li>
+                                                <li><a href="http://www.colourlovers.com/palette/3674057/Soarin_1" rel="external" target="_blank"><h5>Soarin 1</h5><img class="swatch cl_swatch" src="./Palette3_files/cl_swatch(1).php"> by mlpfan</a>
+                        </li>
+                                                <li><a href="http://www.colourlovers.com/palette/1498115/HiredAt_v1" rel="external" target="_blank"><h5>HiredAt v1</h5><img class="swatch cl_swatch" src="./Palette3_files/cl_swatch(2).php"> by zsupalla</a>
+                        </li>
+                                                <li><a href="http://www.colourlovers.com/palette/178755/EE.1" rel="external" target="_blank"><h5>EE.1</h5><img class="swatch cl_swatch" src="./Palette3_files/cl_swatch(3).php"> by retsof</a>
+                        </li>
+                                                <li><a href="http://www.colourlovers.com/palette/136307/Camouflaged_Turtle" rel="external" target="_blank"><h5>Camouflaged Turtle</h5><img class="swatch cl_swatch" src="./Palette3_files/cl_swatch(4).php"> by Dimples</a>
+                        </li>
+                                            </ul>
+				</div>
+				<div id="download_swatch">
+					<p><a href="http://www.pictaculous.com/aco.php?colors=FAC9CC,AFB0D5,E70012,1D2089,FFFFFF" title="Download Adobe Swatch">Download Adobe Swatch</a></p>
+				</div>
+				<div id="email_me_success" style="display: none;"></div>
+				<div id="email_me_error" style="display: none;"></div>
+				<div id="actions">
+					<p><a href="http://www.pictaculous.com/#" id="email_me" title="Email it to me">Email it to me</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://digg.com/submit?url=pictaculous.com&title=TITLE&bodytext=DESCRIPTION&media=MEDIA&topic=TOPIC" title="Digg This" rel="external" target="_blank">Digg This</a>&nbsp;&nbsp;|&nbsp;&nbsp;<script type="text/javascript" src="./Palette3_files/sharethis.js"></script><span id="sharethis_0"><a class="stbutton stico_default" title="ShareThis via email, AIM, social bookmarking and networking sites, etc." href="javascript:void(0)" st_page="home"><span class="stbuttontext" st_page="home">Share this tool</span></a></span>
+						</p>
+				</div>
+			</div>
+            		</div>
+		
+		
+		<p id="view-api"><a href="http://www.pictaculous.com/api/">View API docs <span>▶</span></a></p>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./Palette3_files/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+try {
+    var pageTracker = _gat._getTracker("UA-329148-15");
+    pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+
+<div class="ui-dialog ui-widget ui-widget-content ui-corner-all  ui-draggable ui-resizable" tabindex="-1" role="dialog" aria-labelledby="ui-dialog-title-email_dialog" style="display: none; position: absolute; overflow: hidden; z-index: 1000; outline: 0px;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix" unselectable="on"><span class="ui-dialog-title" id="ui-dialog-title-email_dialog" unselectable="on">Enter Your Email Address</span><a href="http://www.pictaculous.com/#" class="ui-dialog-titlebar-close ui-corner-all" role="button" unselectable="on"><span class="ui-icon ui-icon-closethick" unselectable="on">close</span></a></div><div id="email_dialog" class="ui-dialog-content ui-widget-content">
+		    
+		        <label for="email">Email Address</label>
+		        <input type="text" id="email" name="email">
+		    
+		</div><div class="ui-resizable-handle ui-resizable-n" unselectable="on"></div><div class="ui-resizable-handle ui-resizable-e" unselectable="on"></div><div class="ui-resizable-handle ui-resizable-s" unselectable="on"></div><div class="ui-resizable-handle ui-resizable-w" unselectable="on"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se ui-icon-grip-diagonal-se" unselectable="on" style="z-index: 1001;"></div><div class="ui-resizable-handle ui-resizable-sw" unselectable="on" style="z-index: 1002;"></div><div class="ui-resizable-handle ui-resizable-ne" unselectable="on" style="z-index: 1003;"></div><div class="ui-resizable-handle ui-resizable-nw" unselectable="on" style="z-index: 1004;"></div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><button type="button" class="ui-state-default ui-corner-all">send</button><button type="button" class="ui-state-default ui-corner-all">cancel</button></div></div><iframe id="stSegmentFrame" name="stSegmentFrame" src="./Palette3_files/getSegment.html" frameborder="0" scrolling="no" width="0px" height="0px" style="display:none;"></iframe><div id="stwrapper" class="stwrapper" style="visibility: hidden; top: -999px; left: -999px;"><div class="stclose"></div><iframe allowtransparency="true" id="stframe" class="stframe" name="stframe" frameborder="0" scrolling="no" width="350px" height="450px" src="./Palette3_files/index.ea42c64682787c5fb877b505d6fe4857.html" style="top: 0px; left: 0px;"></iframe></div><div id="window-resizer-tooltip" style="display: none;"><a href="http://www.pictaculous.com/#" title="Edit settings"></a><span class="tooltipTitle">Window size: </span><span class="tooltipWidth" id="winWidth">1280</span> x <span class="tooltipHeight" id="winHeight">720</span><br><span class="tooltipTitle">Viewport size: </span><span class="tooltipWidth" id="vpWidth">1280</span> x <span class="tooltipHeight" id="vpHeight">589</span></div></body></html>
