@@ -1,7 +1,20 @@
-body {
+html body {
 	background-color:	#fff;
+	height:				100%;
 	margin:				0;
 	padding:			0;
+}
+
+.container {
+	min-height:			100%;	/*Test*/
+	height:				100%;
+	/*
+	Know why 'overflow: hidden;' bugs out in Firefox
+	*/
+}
+
+.row {
+	overflow: 		hidden;
 }
 
 .fixed-tester {
@@ -18,10 +31,17 @@ body {
 
 .main-header {
 	border:			1px solid #000;
+	/*height:			100%; Test*/
 }
+	
+	/*
+	.main-header__wspace {	Test Class
+		height:		50%;	
+	}
+	*/
 
 	.main-header__logo {
-
+		/*height:		100%;*/
 	}
 
 	.main-header__logo img {
@@ -45,16 +65,43 @@ body {
 		}
 
 	.main-header__nav {
-
+		/*
+		position:			absolute;
+		bottom:				10%;
+		right:				0;
+		padding-left:		7%;
+		*/
+		margin-top:			8%;
+		padding-left:		8.2%;
+		padding-right: 		0;
 	}
 
 		.main-header__nav h5 {
-			text-align: right;
+			text-align: 	right;
+		}
+
+		.main-header__nav li.active a, .main-header__nav li.active a:hover {
+			background-color:	#d40000;
+		}
+
+		.main-header__nav li a {
+			color:				#d40000;
+		}
+		.main-header__nav li a:hover {
+			background-color: 	#ffb8b8;
 		}
 
 .inf-panel, .main-panel, .misc-panel {
 	border:			1px solid #000;
-	border-radius:	0; 
+	border-radius:	0;
+
+	/*
+	Equal column heights
+	Note: PROBLEM with Firefox!
+	*/
+	margin-bottom: 	-9999px;
+	padding-bottom: 9999px;
+
 }
 
 .main-panel {
@@ -65,12 +112,45 @@ body {
 		/*border:			1px solid #000;*/
 	}
 
+		.main-panel__cnt .tabs .nav-tabs li a {
+				border-radius:	20% 20% 0 0;
+		}
+
 		.main-panel__cnt__vis {
 			/*border:			1px solid #000;*/
 		}
 
 			.main-panel__cnt__vis h1 {
+				margin:			5% auto;
 				text-align:		center;
+			}
+
+			.main-panel__cnt__vis img {
+				display:		block;
+				margin:			0 auto;
+			}
+
+			/*
+			Exclusive class for non-home images located in main-panel__cnt__vis
+			*/
+			.main-panel__cnt__vis .img-wrap {
+				margin:			3%;
+			}
+
+			.main-panel__cnt__vis .summary {
+				margin:			20px auto;
+			}
+
+				.main-panel__cnt__vis .summary table {
+					margin:		0 auto;
+				}
+
+				.main-panel__cnt__vis .summary table td {
+					padding: 	0 20px;
+				}
+
+			.main-panel__cnt__vis span {
+				font-weight: 	bold;
 			}
 
 		.main-panel__cnt__txt {

@@ -1,0 +1,15 @@
+/*
+Used ID for table-main instead of class because of conflicts. Check for better solutions.
+*/
+#table-main {
+
+}
+
+	#table-main .table-team {
+		font-weight:		bold;
+	}
+
+	#table-main td {
+		padding:			20px;
+		vertical-align: 	top;
+	}
