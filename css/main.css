@@ -80,7 +80,10 @@ html body {
 			text-align: 	right;
 		}
 
-		.main-header__nav li.active a, .main-header__nav li.active a:hover {
+		/*
+		*	a:focus pseudo-class added to ensure that the intended color binds on click instance
+		*/
+		.main-header__nav li.active a, .main-header__nav li.active a:hover, .main-header__nav li.active a:focus {
 			background-color:	#d40000;
 		}
 
