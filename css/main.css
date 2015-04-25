@@ -26,12 +26,15 @@ html body {
 
 	.fixed-tester a {
 		padding:		10px;
-		border:		1px solid #aaa;*
+		border:		1px solid #aaa;
 	}
 
 .main-header {
-	border:			1px solid #000;
-	/*height:			100%; Test*/
+	/*border:			1px solid #000;
+	height:			100%; Test*/
+	background-color: 	#131c20;
+	border-bottom:		5px solid #000;
+	margin:				-1.3% 0 0 0;
 }
 	
 	/*
@@ -50,16 +53,24 @@ html body {
 	}
 
 	.main-header__txt {
-		display:	inline-block;
-		margin:		50px 0 0 30px;
+		color:			#8b8f8e;
+		display:		inline-block;
+		font-family: 	"Sports-World", "Droid Serif";
+		margin:			50px 0 0 30px;
 	}
 
+		.main-header__txt h1, .main-header__txt h3 {
+			text-shadow: 	0px -3px 0px #303030;
+		}
+
 		.main-header__txt h1 {
-			font-size: 	3em;
-			margin:		auto 0 0 0;
+			font-size: 		4em;
+			font-weight: 	bold;
+			margin:			auto 0 0 0;
 		}
 
 		.main-header__txt h3 {
+			color:		#bbbdba;
 			font-size:	2em;
 			margin:		0;
 		}
@@ -94,8 +105,17 @@ html body {
 			background-color: 	#ffb8b8;
 		}
 
+.panel-group {
+	background-color:	#262b33; /*#303741;*/
+	margin-bottom:		0;
+}
+
+.panel-group .container {
+	margin:			auto;
+}
+
 .inf-panel, .main-panel, .misc-panel {
-	border:			1px solid #000;
+	/*border:			1px solid #000;*/
 	border-radius:	0;
 
 	/*
@@ -107,16 +127,86 @@ html body {
 
 }
 
-.main-panel {
+.inf-panel, .misc-panel {
+	padding-top:	2%;
+}
 
+.inf-panel {
+	border-right:	5px solid #000;
+	color:			#bebadd;
+}
+
+.main-panel {
+	background-color:	#ccd4d8; /*#95acb5;*/
+	padding-left:			0;
+	padding-right: 			0;
+	position:				relative;
+
+	/*
+	*	CSS work around for animated transitioning between classes of this div
+	*/
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 	.main-panel__cnt {
 		/*border:			1px solid #000;*/
 	}
 
-		.main-panel__cnt .tabs .nav-tabs li a {
-				border-radius:	20% 20% 0 0;
+		.main-panel__cnt .tabs {
+			background-color: 	#454b54;
+			padding-top:		1%;
+		}
+
+		.main-panel__cnt .tabs h3 {
+			font-family:	"Michroma";
+			font-size:		1.3em;
+		}
+
+		.main-panel__cnt .nav-tabs {
+			/*border-bottom:		3px solid #262b33;*/
+		}
+
+		.main-panel__cnt .tabs .nav-tabs li.active a {
+			background-color: 	#ccd4d8;
+			/*
+			border:				2px solid #ccd4d8;
+			margin:				2px 0 0 0;
+			*/
+		}
+
+			.main-panel__cnt .nav-tabs li a {
+				background-color: 	#262b33;
+				border-top:			2px solid #1c1f25;
+				border-left:		2px solid #1c1f25;
+				border-right:		2px solid #1c1f25;
+				border-radius:		20px 20px 0 0;
+			}
+
+			/**
+			*	Problems with hover: Tabs will wrap to the next line in a very unpleasant looking way
+			*/
+			.main-panel__cnt .nav-tabs li a:hover {
+				background-color: 	#3c4047;
+				font-weight:		bold;
+				line-height: 		20%;
+				/*font-size: 		1.5em;*/
+
+			/**
+			*	To change the margin overlap on hover, refer to the IDs #home-btn, #school-btn, and #stars-btn at the ID section
+			*/
+		}
+
+		.main-panel__cnt .wrapper {
+			border-top:			3px solid #262b33;
+		}
+
+		.main-panel__cnt__vis, .main-panel__cnt__txt {
+			color:			#222;
+			padding-left:	2%;
+			padding-right: 	2%;
 		}
 
 		.main-panel__cnt__vis {
@@ -124,8 +214,14 @@ html body {
 		}
 
 			.main-panel__cnt__vis h1 {
+				font-family: 	"Droid Serif";
+				font-weight: 	bold;
 				margin:			5% auto;
 				text-align:		center;
+			}
+
+			.main-panel__cnt__vis h1:first-child {
+				font-size:		3.5em;
 			}
 
 			.main-panel__cnt__vis img {
@@ -141,6 +237,8 @@ html body {
 			}
 
 			.main-panel__cnt__vis .summary {
+				font-family:	"Octin-College";
+				font-size: 		1.2em;
 				margin:			20px auto;
 			}
 
@@ -153,13 +251,39 @@ html body {
 				}
 
 			.main-panel__cnt__vis span {
+				font-size: 		0.9em;
 				font-weight: 	bold;
 			}
 
 		.main-panel__cnt__txt {
-			
+			font-family:		"Abel";
+			font-size: 			1.2em;	
 		}
 
+.misc-panel {
+	border-left:	5px solid #000;
+	font-family: 	"Abel";
+	color:			#f7d0d2;
+
+}
+
+	.misc-panel .misc-panel__wrapper:first-child {
+		font-size: 		1.1em;
+	}
+
 .main-footer {
-	border:			1px solid #000;
+	/*border:			1px solid #000;*/
+	background-color:	#131c20;
+}
+
+#home-btn:hover{
+
+}
+
+#school-btn:hover {
+	/*margin:			0 0 0 -5%;*/
+}
+
+#stars-btn:hover {
+	/*margin:			0 0 0 -10%;*/
 }

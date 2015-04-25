@@ -10,13 +10,14 @@ $(document).ready(function() {
 	*/
 
 	//Home Tab
+	/*
 	$(document).on('click', '#home-btn', function() {
 
 		$('.tabs li').removeClass('active');
 		$(this).addClass('active');
 		//$('.main-panel__cnt__vis, .main-panel__cnt__txt').html(homeClone.clone());	//.clone() ensures homeClone doesn't change values
 		
-		$('.inf-panel').show();
+		$('.inf-panel').show(500);
 		$('.main-panel').removeClass('col-md-10');
 		$('.main-panel').addClass('col-md-8');
 
@@ -25,6 +26,7 @@ $(document).ready(function() {
 		$('.main-panel__cnt__txt').html(cntTxtClone.clone());
 
 	});
+	
 
 	//School Tab
 	$(document).on('click', '#school-btn', function() {
@@ -39,6 +41,7 @@ $(document).ready(function() {
 		$('.main-panel__cnt__vis, .main-panel__cnt__txt').empty();
 	});
 
+	
 	//NBA Teams and Stars Tab
 	$(document).on('click', '#stars-btn', function() {
 
@@ -52,13 +55,69 @@ $(document).ready(function() {
 		$('.main-panel__cnt__vis, .main-panel__cnt__txt').empty();
 		$('.main-panel__cnt__vis').load("/players.html #table-main");
 	});
+	*/
 
+	$('.main-panel__cnt .tabs ul li').on('click', function() {
+		var $panelId = $(this).attr('id');
+
+		$('.main-panel__cnt .tabs ul li.active').removeClass('active');
+		$(this).addClass('active');
+		//alert($panelId);
+
+		switch ($panelId) {
+			case "home-btn": 
+
+				showInfPanel(500);
+
+				//Fix for the duplicate element clone bug
+				$('.main-panel__cnt__vis').html(cntVisClone.clone()).hide().fadeIn(500);
+				$('.main-panel__cnt__txt').html(cntTxtClone.clone()).hide().fadeIn(500);
+
+				break;
+			
+			case "school-btn": 
+
+				showInfPanel(500);
+
+				$('.main-panel__cnt__vis, .main-panel__cnt__txt').empty();
+
+				break;
+				
+			case "stars-btn": 
+
+				// Hide info panel and expand the main panel
+				// NOTE: Minor visual bug in which the misc panel content sometimes flickers for a split second in the left pane
+				hideInfPanel(500);
+
+				// Show the players table that is referred from an external resource "players.html"
+				// Custom JQuery animation on callback
+				$('.main-panel__cnt__vis, .main-panel__cnt__txt').empty();
+				$('.main-panel__cnt__vis').load("/players.html table", function() {
+					$(this).hide();
+					$(this).fadeIn(1000);
+				});
+
+				break;
+		}
+
+		function showInfPanel(time) {
+			$('.inf-panel').show(time);
+			$('.main-panel').removeClass('col-md-10').addClass('col-md-8');
+		}
+
+		function hideInfPanel(time) {
+			$('.inf-panel').hide(time, function() {
+				$('.main-panel').removeClass('col-md-8').addClass('col-md-10');
+			});
+		}
+
+	});
 	/*
 	*	Misc Panel Declarations and Functions
 	*/
 
 	var misc_panel = {
-		about: "<p><strong>NBArds</strong> is an 'Edutainment' website that is focused on delivering entertaining and high-quality information on all things related to the National Basketball Association. Deriving from the acronym <em>NBA</em> and the word <em>bard</em>, this site acts as the league's unofficial profiler and storyteller. Whether you're a longtime hardcore NBA fan or a casual fan wanting to learn more about the association, this site is for you. Explore now and be informed and updated to a variety of topics such as NBA stars and teams, statistics, and author opinions.</p>",
+		about: "<p><strong>NBArd</strong> is an 'Edutainment' website that is focused on delivering entertaining and high-quality information on all things related to the National Basketball Association. Deriving from the acronym <em>NBA</em> and the word <em>bard</em>, this site acts as the league's unofficial profiler and storyteller. Whether you're a longtime hardcore NBA fan or a casual fan wanting to learn more about the association, this site is for you. Explore now and be informed and updated to a variety of topics such as NBA stars and teams, statistics, and author opinions.</p>",
 		vision: "value",
 		contact: "Contact me.",
 	};

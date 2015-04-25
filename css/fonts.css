@@ -27,3 +27,8 @@
 	font-family: "Jersey-Letters";
 	src: url("../fonts/JerseyLetters.ttf") format("truetype");
 }
+
+@font-face {
+	font-family: "Sports-World";
+	src: url("../fonts/Sports World-Regular.ttf") format("truetype");
+}
