@@ -82,6 +82,7 @@ html body {
 		right:				0;
 		padding-left:		7%;
 		*/
+		font-family: 		"Droid Serif";
 		margin-top:			8%;
 		padding-left:		8.2%;
 		padding-right: 		0;
@@ -100,6 +101,7 @@ html body {
 
 		.main-header__nav li a {
 			color:				#d40000;
+			padding:			0.4em;
 		}
 		.main-header__nav li a:hover {
 			background-color: 	#ffb8b8;
@@ -156,8 +158,14 @@ html body {
 	}
 
 		.main-panel__cnt .tabs {
+			/*
+			*	No solid solution yet except setting a fixed height.
+			*/
+			height:				61px;
+
 			background-color: 	#454b54;
 			padding-top:		1%;
+			overflow: 			hidden;
 		}
 
 		.main-panel__cnt .tabs h3 {
@@ -173,8 +181,10 @@ html body {
 			background-color: 	#ccd4d8;
 			/*
 			border:				2px solid #ccd4d8;
-			margin:				2px 0 0 0;
 			*/
+			margin:				0;
+			padding-top:		.2em;
+			padding-bottom:		.2em;
 		}
 
 			.main-panel__cnt .nav-tabs li a {
@@ -183,6 +193,10 @@ html body {
 				border-left:		2px solid #1c1f25;
 				border-right:		2px solid #1c1f25;
 				border-radius:		20px 20px 0 0;
+
+				line-height: 		1.7;
+				margin: 			1.2em 0 0 0;
+				padding-top: 		0.1em;
 			}
 
 			/**
@@ -200,7 +214,8 @@ html body {
 		}
 
 		.main-panel__cnt .wrapper {
-			border-top:			3px solid #262b33;
+			height:				100%;
+			border-top:			2px solid #262b33;
 		}
 
 		.main-panel__cnt__vis, .main-panel__cnt__txt {
@@ -274,6 +289,7 @@ html body {
 .main-footer {
 	/*border:			1px solid #000;*/
 	background-color:	#131c20;
+	clear:				both;
 }
 
 #home-btn:hover{
@@ -281,9 +297,17 @@ html body {
 }
 
 #school-btn:hover {
-	/*margin:			0 0 0 -5%;*/
+
 }
 
 #stars-btn:hover {
 	/*margin:			0 0 0 -10%;*/
+}
+
+@media (max-width: @screen-xs) {
+	body:	{ font-size: 8px; }
+}
+
+@media (max-width: @screen-sm) {
+	body:	{ font-size: 12px; }
 }

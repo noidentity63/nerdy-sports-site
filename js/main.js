@@ -5,6 +5,8 @@ $(document).ready(function() {
 	var cntVisClone = $('.main-panel__cnt__vis').clone();
 	var cntTxtClone = $('.main-panel__cnt__txt').clone();
 
+	var $mainPanelTabs = $('.main-panel__cnt .tabs ul li');
+	var $miscPanelBtns = $();
 	/*
 	*	Main Navigation Tabs
 	*/
@@ -57,19 +59,21 @@ $(document).ready(function() {
 	});
 	*/
 
-	$('.main-panel__cnt .tabs ul li').on('click', function() {
-		var $panelId = $(this).attr('id');
+	$mainPanelTabs.on('click', function() {
+		var $tabId = $(this).attr('id');
 
 		$('.main-panel__cnt .tabs ul li.active').removeClass('active');
 		$(this).addClass('active');
-		//alert($panelId);
+		//alert($tabId);
 
-		switch ($panelId) {
+		switch ($tabId) {
 			case "home-btn": 
 
 				showInfPanel(500);
 
-				//Fix for the duplicate element clone bug
+				/*	Fix for the duplicate element clone bug
+				*	.clone() ensures that the variables don't lose their respective values
+				*/
 				$('.main-panel__cnt__vis').html(cntVisClone.clone()).hide().fadeIn(500);
 				$('.main-panel__cnt__txt').html(cntTxtClone.clone()).hide().fadeIn(500);
 
@@ -112,6 +116,37 @@ $(document).ready(function() {
 		}
 
 	});
+	
+	$mainPanelTabs.on('mouseenter', function() {
+		// Store id attribute
+		var initTop = $(this).css('margin-top');
+
+		// Animate the selected button if it is not active
+		if (!$(this).hasClass('active')) {
+			
+			$(this).stop().animate({ marginTop: "-1.2em" }, 200);
+			$(this).on('mouseleave', function() {
+				$(this).stop().animate({ marginTop: initTop }, 200);
+			});
+		}
+	});
+
+	/*
+	*	Alternative hover function
+
+	var initTop = $mainPanelTabs.css('margin-top');
+
+	$mainPanelTabs.on('hover',
+		function() {
+			// Animate the selected button
+			$(this).stop().animate({ marginTop: "-1.2em" }, 200);
+		},
+		function() {
+			$(this).stop().animate({ marginTop: initTop }, 200);
+		}
+	);
+	*/
+
 	/*
 	*	Misc Panel Declarations and Functions
 	*/
@@ -123,6 +158,7 @@ $(document).ready(function() {
 	};
 
 	$('.misc-panel__wrapper').html(misc_panel.about);
+
 
 	//Show 'About' section on #about-btn click
 	$(document).on('click', '#about-btn', function() {
@@ -151,5 +187,6 @@ $(document).ready(function() {
 
 		$('.misc-panel__wrapper').html(misc_panel.contact);
 	});
+
 
 });
