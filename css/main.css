@@ -168,6 +168,13 @@ html body {
 			background-color: 	#454b54;
 			padding-top:		1%;
 			overflow: 			hidden;
+
+			/*
+			*	Box shadow effect
+			*/
+			-webkit-box-shadow: inset 0px 3px 10px 0px rgba(0,0,0,0.7);
+			-moz-box-shadow: inset 0px 3px 10px 0px rgba(0,0,0,0.7);
+			box-shadow: inset 0px 3px 10px 0px rgba(0,0,0,0.7);
 		}
 
 		.main-panel__cnt .tabs h3 {
