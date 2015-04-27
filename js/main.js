@@ -116,7 +116,7 @@ $(document).ready(function() {
 		}
 
 	});
-	
+	/*
 	$mainPanelTabs.on('mouseenter', function() {
 		// Store id attribute
 		var initTop = $(this).css('margin-top');
@@ -125,27 +125,40 @@ $(document).ready(function() {
 		if (!$(this).hasClass('active')) {
 			
 			$(this).stop().animate({ marginTop: "-1.2em" }, 200);
+
+			// Very buggy so far. Take note.
+			$(this).on('click', function() {
+				$(this).css("margin-top", initTop);
+			});
+
 			$(this).on('mouseleave', function() {
 				$(this).stop().animate({ marginTop: initTop }, 200);
 			});
+
 		}
 	});
 
 	/*
 	*	Alternative hover function
-
+	*/
 	var initTop = $mainPanelTabs.css('margin-top');
 
-	$mainPanelTabs.on('hover',
+	$mainPanelTabs.hover(
 		function() {
-			// Animate the selected button
-			$(this).stop().animate({ marginTop: "-1.2em" }, 200);
+			// Animate the selected button if tab isn't active
+			if (!$(this).hasClass('active')) {
+				$(this).stop().animate({ marginTop: "-1.2em" }, 200);
+			}
+
+			// Very buggy so far. Take note.
+			$(this).on('click', function() {
+				$(this).css("margin-top", initTop);
+			});
 		},
 		function() {
 			$(this).stop().animate({ marginTop: initTop }, 200);
 		}
 	);
-	*/
 
 	/*
 	*	Misc Panel Declarations and Functions
@@ -154,7 +167,7 @@ $(document).ready(function() {
 	var misc_panel = {
 		about: "<p><strong>NBArd</strong> is an 'Edutainment' website that is focused on delivering entertaining and high-quality information on all things related to the National Basketball Association. Deriving from the acronym <em>NBA</em> and the word <em>bard</em>, this site acts as the league's unofficial profiler and storyteller. Whether you're a longtime hardcore NBA fan or a casual fan wanting to learn more about the association, this site is for you. Explore now and be informed and updated to a variety of topics such as NBA stars and teams, statistics, and author opinions.</p>",
 		vision: "value",
-		contact: "Contact me.",
+		contact: "I'm Bryan Pineda. Contact me...",
 	};
 
 	$('.misc-panel__wrapper').html(misc_panel.about);

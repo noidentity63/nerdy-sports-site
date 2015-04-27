@@ -20,17 +20,19 @@ Future plans and features for the project:
 * CSS3
 * JavaScript
 * Ruby
-* PHP (Possibly)
+* PHP (Possibly; To be branced out)
 
 ####Frameworks to be used:
 
 * JQuery
 * Bootstrap
 * AngularJS (Possibly)
-* Ruby on Rails
+* Ruby on Rails (When Back-end support is needed; To be branched out)
 
 ####Database to be used:
 
 * MySQL
 
 ###...to be updated
+
+-Bry

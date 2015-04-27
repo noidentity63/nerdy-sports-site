@@ -83,8 +83,10 @@ html body {
 		padding-left:		7%;
 		*/
 		font-family: 		"Droid Serif";
-		margin-top:			8%;
-		padding-left:		8.2%;
+		font-weight: 		bold;
+
+		margin-top:			8.7%;
+		padding-left:		7.3%;
 		padding-right: 		0;
 	}
 
@@ -177,21 +179,30 @@ html body {
 			/*border-bottom:		3px solid #262b33;*/
 		}
 
+		.main-panel__cnt .nav-tabs li a, .main-panel__cnt .tabs .nav-tabs li.active a {
+			border-top:			2px solid #1c1f25;
+			border-left:		2px solid #1c1f25;
+			border-right:		2px solid #1c1f25;
+		}
+
 		.main-panel__cnt .tabs .nav-tabs li.active a {
 			background-color: 	#ccd4d8;
 			/*
 			border:				2px solid #ccd4d8;
 			*/
+
 			margin:				0;
 			padding-top:		.2em;
 			padding-bottom:		.2em;
 		}
 
+		.main-panel__cnt .tabs .nav-tabs li.active a:hover {
+
+			color:				#111451;
+		}
+
 			.main-panel__cnt .nav-tabs li a {
 				background-color: 	#262b33;
-				border-top:			2px solid #1c1f25;
-				border-left:		2px solid #1c1f25;
-				border-right:		2px solid #1c1f25;
 				border-radius:		20px 20px 0 0;
 
 				line-height: 		1.7;
@@ -203,6 +214,7 @@ html body {
 			*	Problems with hover: Tabs will wrap to the next line in a very unpleasant looking way
 			*/
 			.main-panel__cnt .nav-tabs li a:hover {
+				color:				#84aed3;
 				background-color: 	#3c4047;
 				font-weight:		bold;
 				line-height: 		20%;
@@ -272,7 +284,7 @@ html body {
 
 		.main-panel__cnt__txt {
 			font-family:		"Abel";
-			font-size: 			1.2em;	
+			font-size: 			1.15em;	
 		}
 
 .misc-panel {
