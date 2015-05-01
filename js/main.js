@@ -1,12 +1,23 @@
 $(document).ready(function() {
-	alert("JavaScript and JQuery OK!");
+	alert("JavaScript and JQuery OK! Really!!");
+
+	jQuery.fn.visible = function() {
+		return this.css('visibility', 'visible');
+	}
+
+	jQuery.fn.invisible = function() {
+		return this.css('visibility', 'hidden');
+	}
+
 
 	//var homeClone = $('.main-panel__cnt__vis, .main-panel__cnt__txt').clone();
 	var cntVisClone = $('.main-panel__cnt__vis').clone();
 	var cntTxtClone = $('.main-panel__cnt__txt').clone();
 
 	var $mainPanelTabs = $('.main-panel__cnt .tabs ul li');
-	var $miscPanelBtns = $();
+	var $miscPanelBtns = $('.main-header__nav ul li');
+
+	var $mainPanelCntVisTxt = $('.main-panel__cnt__vis, .main-panel__cnt__txt');
 	/*
 	*	Main Navigation Tabs
 	*/
@@ -69,7 +80,7 @@ $(document).ready(function() {
 		switch ($tabId) {
 			case "home-btn": 
 
-				showInfPanel(500);
+				showInfPanel(300);
 
 				/*	Fix for the duplicate element clone bug
 				*	.clone() ensures that the variables don't lose their respective values
@@ -81,9 +92,9 @@ $(document).ready(function() {
 			
 			case "school-btn": 
 
-				showInfPanel(500);
+				$mainPanelCntVisTxt.empty();
 
-				$('.main-panel__cnt__vis, .main-panel__cnt__txt').empty();
+				showInfPanel(300);
 
 				break;
 				
@@ -91,22 +102,26 @@ $(document).ready(function() {
 
 				// Hide info panel and expand the main panel
 				// NOTE: Minor visual bug in which the misc panel content sometimes flickers for a split second in the left pane
-				hideInfPanel(500);
+				hideInfPanel(300);
 
 				// Show the players table that is referred from an external resource "players.html"
 				// Custom JQuery animation on callback
-				$('.main-panel__cnt__vis, .main-panel__cnt__txt').empty();
+				$mainPanelCntVisTxt.empty();
 				$('.main-panel__cnt__vis').load("/players.html table", function() {
 					$(this).hide();
-					$(this).fadeIn(1000);
+					$(this).fadeIn(700);
 				});
 
 				break;
 		}
 
 		function showInfPanel(time) {
+			$('.misc-panel .misc-panel__wrapper:first-child').invisible();
+
 			$('.inf-panel').show(time);
+
 			$('.main-panel').removeClass('col-md-10').addClass('col-md-8');
+			$('.misc-panel .misc-panel__wrapper:first-child').visible();
 		}
 
 		function hideInfPanel(time) {
@@ -166,13 +181,14 @@ $(document).ready(function() {
 
 	var misc_panel = {
 		about: "<p><strong>NBArd</strong> is an 'Edutainment' website that is focused on delivering entertaining and high-quality information on all things related to the National Basketball Association. Deriving from the acronym <em>NBA</em> and the word <em>bard</em>, this site acts as the league's unofficial profiler and storyteller. Whether you're a longtime hardcore NBA fan or a casual fan wanting to learn more about the association, this site is for you. Explore now and be informed and updated to a variety of topics such as NBA stars and teams, statistics, and author opinions.</p>",
-		vision: "value",
+		vision: "Vision text here....",
 		contact: "I'm Bryan Pineda. Contact me...",
 	};
 
 	$('.misc-panel__wrapper').html(misc_panel.about);
 
 
+	/*
 	//Show 'About' section on #about-btn click
 	$(document).on('click', '#about-btn', function() {
 
@@ -199,6 +215,50 @@ $(document).ready(function() {
 		$(this).addClass('active');
 
 		$('.misc-panel__wrapper').html(misc_panel.contact);
+	});
+	*/
+
+	$miscPanelBtns.on('click', function() {
+		var btnId = $(this).attr('id');
+		var $wrapperOne = $('.misc-panel__wrapper');
+
+		//alert(btnId);
+
+		// Change 'active' class for the button group
+		toggleActiveButtons(this);
+
+		//$('.main-header__nav .nav ul li.active').removeClass('active');
+		//$(this).addClass('active');
+
+		$wrapperOne.empty();
+
+		switch (btnId) {
+			case "about-btn":
+				// Show 'about' text in first misc panel wrapper
+				$wrapperOne.html(misc_panel.about).hide().fadeIn(400);
+				
+				break;
+			case "vision-btn":
+				// Show 'vision' text in first misc panel wrapper 
+				$wrapperOne.html(misc_panel.vision).hide().fadeIn(400);
+
+				break;
+			case "contact-btn": 
+				// Show 'contact' text in first misc panel wrapper
+				$wrapperOne.html(misc_panel.contact).hide().fadeIn(400);
+
+				break;
+		}
+
+		// BUG FIXED! Just messed up with my selectors names.
+		function toggleActiveButtons (newBtn) {
+			var $activeBtn = $('.main-header__nav ul li.active');
+
+			// Move active class to another button
+			$activeBtn.removeClass('active');
+			$(newBtn).addClass('active');
+		}
+
 	});
 
 

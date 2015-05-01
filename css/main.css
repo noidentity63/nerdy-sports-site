@@ -120,7 +120,8 @@ html body {
 
 .inf-panel, .main-panel, .misc-panel {
 	/*border:			1px solid #000;*/
-	border-radius:	0;
+	border-radius:		0;
+	border-collapse:	collapse;
 
 	/*
 	Equal column heights
@@ -141,7 +142,7 @@ html body {
 }
 
 .main-panel {
-	background-color:	#ccd4d8; /*#95acb5;*/
+	background-color:		#dddeda; /*#ccd4d8; #95acb5;*/
 	padding-left:			0;
 	padding-right: 			0;
 	position:				relative;
@@ -149,10 +150,10 @@ html body {
 	/*
 	*	CSS work around for animated transitioning between classes of this div
 	*/
-	-webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+	-webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 	.main-panel__cnt {
@@ -193,7 +194,7 @@ html body {
 		}
 
 		.main-panel__cnt .tabs .nav-tabs li.active a {
-			background-color: 	#ccd4d8;
+			background-color: 	#dddeda; /*#ccd4d8;*/
 			/*
 			border:				2px solid #ccd4d8;
 			*/
@@ -322,6 +323,44 @@ html body {
 #stars-btn:hover {
 	/*margin:			0 0 0 -10%;*/
 }
+
+#table-main {
+	font-family: 	"Droid Serif";
+}
+
+	#table-main span {
+		
+	}
+
+	/*
+	#table-main > tbody > tr > td > a, #table-main ul li {
+		color:			#1d2089;
+	}
+	*/
+	
+	#table-main > tbody > tr > td > a {
+		font-size: 		1.1em;
+		margin-bottom:	3em;
+
+	}
+
+	#table-main > tbody > tr > td > ul {
+		padding-left:	0;
+		margin: 		1em 0 0 0;
+	}
+
+	#table-main > tbody > tr > td > ul > li {
+		font-size: 		0.9em;
+
+		text-align: 	left;
+		list-style: 	none;
+	}
+
+/*
+.table-team {
+	font-size: 		1.5em;
+}
+*/
 
 @media (max-width: @screen-xs) {
 	body:	{ font-size: 8px; }
